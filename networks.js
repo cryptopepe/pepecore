@@ -6,29 +6,27 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('c0c0c0c0'),
-  addressVersion: 0x1E,
-  privKeyVersion: 158,
-  P2SHVersion: 5,
+  magic: hex('3ac42c2f'),
+  addressVersion: 0x37,
+  privKeyVersion: 99,
+  P2SHVersion: 55,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('9156352C1818B32E90C9E792EFD6A11A82FE7956A630F03BBEE236CEDAE3911A'),
-    merkle_root: hex('696AD20E2DD4365C7459B4A4A5AF743D5E92C6DA3229E6532CD605F6533F2A5B'),
+    hash: hex('722289f938fdc4fe5f1940a4b5b0528210b2f3dae28740778d35016aae8c0000$
+    merkle_root: hex('f8d91b2c93bd7222515770b67f20d3380edf8292548daeb3b0ce82fd5$
     height: 0,
-    nonce: 99943,
+    nonce: 663024,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1386325540,
+    timestamp: 1457184666,
     bits: 504365040,
   },
   dnsSeeds: [
-    'seed.dogecoin.com',
-    'seed.mophides.com',
-    'seed.dglibrary.org',
-    'seed.dogechain.info'
+    'seed.kekdaq.com',
+    'seed.pepecoin.co'
   ],
-  defaultClientPort: 22556
+  defaultClientPort: 29377
 };
 
 exports.mainnet = exports.livenet;
